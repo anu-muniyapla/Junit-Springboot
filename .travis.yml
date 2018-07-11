@@ -1,4 +1,15 @@
 language: java
+https://travis-ci.org/anu-muniyapla/Junit-Springboot.svg?branch=master
+
+![Coveralls github](https://img.shields.io/coveralls/github/jekyll/jekyll.svg)
+
+![GitHub package version](https://img.shields.io/github/package-json/v/badges/shields.svg)
+
+
+![Codecov](https://img.shields.io/codecov/c/github/codecov/example-python.svg)
+
+
+
 sudo: false # faster builds
 jdk:
 - oraclejdk8
