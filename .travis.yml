@@ -1,23 +1,9 @@
 language: java
-https://travis-ci.org/anu-muniyapla/Junit-Springboot.svg?branch=master
-
-![Coveralls github](https://img.shields.io/coveralls/github/jekyll/jekyll.svg)
-
-![GitHub package version](https://img.shields.io/github/package-json/v/badges/shields.svg)
-
-
-![Codecov](https://img.shields.io/codecov/c/github/codecov/example-python.svg)
-
-
-
-sudo: false # faster builds
 jdk:
-- oraclejdk8
+  - oraclejdk8
 
-script: "mvn cobertura:cobertura"
+install: true
 
-
-after_success:
-  - bash <(curl -s https://codecov.io/bash)-t 473512dd-b845-4280-b4ab-ae8988a5dffd
-  
-
+script:
+- mvn clean install cobertura:cobertura
+- bash <(curl -s https://codecov.io/bash)
